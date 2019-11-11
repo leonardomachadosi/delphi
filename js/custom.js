@@ -9,7 +9,20 @@ function textModal(title, text) {
     }
 }
 
+function buscarPerfil() {
+    // var operacao = "A"; //"A"=Adição; "E"=Edição
+    // var indice_selecionado = -1; //Índice do item selecionado na lista
+    var tbClientes = localStorage.getItem("tbClientes");// Recupera os dados armazenados
+    var clientes = JSON.parse(tbClientes); // Converte string para objeto
+    // console.log(clientes['uf04_cod_expert']);
+    return clientes;
+}
+
 $(document).ready(function () {
+    var user = buscarPerfil();
+    if (!user) {
+        goToIndex();
+    }
     var btn_close = $('.close-button');
     var load = $('.load-tag');
     var btn = $('#btn_send');
@@ -25,7 +38,6 @@ $(document).ready(function () {
 
     function sendData() {
         var data = $('.form-data-send').serialize();
-
         if (data) {
             $.ajax({
                 method: "POST",
@@ -54,16 +66,20 @@ $(document).ready(function () {
                     load.hide();
                 });
         } else {
-            textModal("Pay Attention", 'Your answer is empty');
+            textModal("Pay Attention", 'Your answer are empty');
         }
     }
 
 
     btn_close.click(function () {
         if (success) {
-            window.location.replace("./index.html");
+            goToIndex();
         } else {
             modal.close();
         }
     });
+
+    function goToIndex() {
+        window.location.replace("./index.html");
+    }
 });
