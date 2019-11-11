@@ -1,0 +1,82 @@
+body, h1, h2, h3, h4, h5 {
+    font-family: "Poppins", sans-serif
+}
+
+body {
+    font-size: 16px;
+}
+
+.w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer
+}
+
+.w3-half img:hover {
+    opacity: 1
+}
+
+.w3-text-new, .w3-hover-text-new:hover {
+    color: darkcyan !important;
+}
+
+.w3-new, .w3-new:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+.demo-list-control {
+    width: 300px;
+}
+
+.demo-list-radio {
+    display: inline;
+}
+
+.modal-dialog-new {
+    width: 80% !important;
+    /*height: ;*/
+}
+
+.modal-dialog-custom {
+    width: 30% !important;
+}
+
+.div-custom {
+    height: 200px !important;
+    overflow: hidden !important;
+}
+
+.mdl-button-new {
+    width: 10% !important;
+    float: right !important;
+}
+
+.demo-list-three {
+    width: 650px;
+}
+
+.list-new {
+    width: 1000px !important;
+}
+
+.spn-pd {
+    height: 100px !important;
+}
+
+.spn-s {
+    height: 120px !important;
+}
+
+.spn-se {
+    height: 125px !important;
+}
+
+.btn-new {
+    background-color: darkcyan !important;
+}
+
+.element-none {
+    display: none;
+}

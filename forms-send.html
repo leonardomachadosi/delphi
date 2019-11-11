@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<title>Qualidade de Produto em Aplicações de Cidades Inteligentes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script type="application/javascript" defer src="js/main-script.js"></script>
+<script type="application/javascript" defer src="js/custom.js"></script>
+
+<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+<link rel="shortcut icon" type="image/png" href="img/lsdi_logo.png"/>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-new w3-collapse w3-top w3-large w3-padding"
+     style="z-index:3;width:300px;font-weight:bold; background: darkcyan !important;"
+     id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+       style="width:100%;font-size:22px"> X </a>
+    <div class="w3-container">
+        <h3 class="w3-padding-64">
+            <b>
+                Universidade Federal do Maranhão - UFMA
+                <hr/>
+            </b>
+        </h3>
+    </div>
+    <div class="w3-bar-block">
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+        <a href="forms-send.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Forms</a>
+    </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-new w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-new w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Software Product Quality in Smart City Applications</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+     id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+        <h1 class="w3-jumbo"><b>Software Product Quality in Smart City Applications</b></h1>
+        <h1 class="w3-xxxlarge w3-text-new"><b>Questions</b></h1>
+        <hr style="width:50px;border:5px solid darkcyan" class="w3-round">
+
+        <br/>
+        <br/>
+
+        <!-- Functional Suitability-->
+        <form action="javascript:sendData();"
+              enctype="multipart/form-data"
+              method="post" class="form-data-send">
+
+            <h4 class="w3-jumbo">
+                Functional Suitability
+                <i class="material-icons  mdl-list__item-avatar show-modal-functional" style="cursor: pointer">info</i>
+            </h4>
+
+            <ul class="demo-list-control mdl-list">
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-1">
+                          <input type="radio" id="list-checkbox-1" class="mdl-radio__button"
+                                 name="fs_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-1">
+                        <input type="radio" id="list-option-1" class="mdl-radio__button"
+                               name="fs_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-1">
+                        <input type="radio" id="list-switch-1" class="mdl-radio__button"
+                               name="fs_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+            </ul>
+            <hr/>
+            <!-- End Functional Suitability -->
+
+        </form>
+
+        <!-- Releability -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                Reliability
+                <i class="material-icons  mdl-list__item-avatar show-modal-reliability" style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-2">
+                          <input type="radio" id="list-checkbox-2" class="mdl-radio__button"
+                                 name="re_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-2">
+                        <input type="radio" id="list-option-2" class="mdl-radio__button"
+                               name="re_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-2">
+                        <input type="radio" id="list-switch-2" class="mdl-radio__button"
+                               name="re_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End Releability -->
+
+        <!-- Performance efficiency -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                Performance efficiency
+                <i class="material-icons  mdl-list__item-avatar show-modal-efficiency" style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-3">
+                          <input type="radio" id="list-checkbox-3" class="mdl-radio__button"
+                                 name="pe_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-3">
+                        <input type="radio" id="list-option-3" class="mdl-radio__button"
+                               name="pe_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-3">
+                        <input type="radio" id="list-switch-3" class="mdl-radio__button"
+                               name="pe_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End Performance efficiency -->
+
+
+        <!-- Operability -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                Operability
+                <i class="material-icons  mdl-list__item-avatar show-modal-operability"
+                   style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-4">
+                          <input type="radio" id="list-checkbox-4" class="mdl-radio__button"
+                                 name="op_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-4">
+                        <input type="radio" id="list-option-4" class="mdl-radio__button"
+                               name="op_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-4">
+                        <input type="radio" id="list-switch-4" class="mdl-radio__button"
+                               name="op_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End Operability -->
+
+        <!-- Security -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                Security
+                <i class="material-icons  mdl-list__item-avatar show-modal-security"
+                   style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-5">
+                          <input type="radio" id="list-checkbox-5" class="mdl-radio__button"
+                                 name="sec_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-5">
+                        <input type="radio" id="list-option-5" class="mdl-radio__button"
+                               name="sec_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-5">
+                        <input type="radio" id="list-switch-5" class="mdl-radio__button"
+                               name="sec_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End Security -->
+
+        <!-- Compatibility -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                Compatibility
+                <i class="material-icons  mdl-list__item-avatar show-modal-compatibility"
+                   style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-6">
+                          <input type="radio" id="list-checkbox-6" class="mdl-radio__button"
+                                 name="comp_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-6">
+                        <input type="radio" id="list-option-6" class="mdl-radio__button"
+                               name="comp_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-6">
+                        <input type="radio" id="list-switch-6" class="mdl-radio__button"
+                               name="comp_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End Compatibility -->
+
+        <!-- Maintainability -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                Maintainability
+                <i class="material-icons  mdl-list__item-avatar show-modal-maintainability"
+                   style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-7">
+                          <input type="radio" id="list-checkbox-7" class="mdl-radio__button"
+                                 name="main_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-7">
+                        <input type="radio" id="list-option-7" class="mdl-radio__button"
+                               name="main_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-7">
+                        <input type="radio" id="list-switch-7" class="mdl-radio__button"
+                               name="main_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End Maintainability -->
+
+        <!-- Transferability -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                Transferability
+                <i class="material-icons  mdl-list__item-avatar show-modal-transferability"
+                   style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-8">
+                          <input type="radio" id="list-checkbox-8" class="mdl-radio__button"
+                                 name="transf_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-8">
+                        <input type="radio" id="list-option-8" class="mdl-radio__button"
+                               name="transf_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-8">
+                        <input type="radio" id="list-switch-8" class="mdl-radio__button"
+                               name="transf_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End Transferability -->
+
+        <!-- EPI.C -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                EPI.C
+                <i class="material-icons  mdl-list__item-avatar show-modal-epic"
+                   style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-9">
+                          <input type="radio" id="list-checkbox-9" class="mdl-radio__button"
+                                 name="epeic_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-9">
+                        <input type="radio" id="list-option-9" class="mdl-radio__button"
+                               name="epeic_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-9">
+                        <input type="radio" id="list-switch-9" class="mdl-radio__button"
+                               name="epeic_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End EPI.C -->
+
+        <!-- Context-awareness -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                Context-awareness
+                <i class="material-icons  mdl-list__item-avatar show-modal-context"
+                   style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-10">
+                          <input type="radio" id="list-checkbox-10" class="mdl-radio__button"
+                                 name="context_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-10">
+                        <input type="radio" id="list-option-10" class="mdl-radio__button"
+                               name="context_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-10">
+                        <input type="radio" id="list-switch-10" class="mdl-radio__button"
+                               name="context_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End Context-awareness -->
+
+        <!-- Mobility -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                Mobility
+                <i class="material-icons  mdl-list__item-avatar show-modal-mobility"
+                   style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-11">
+                          <input type="radio" id="list-checkbox-11" class="mdl-radio__button"
+                                 name="mob_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-11">
+                        <input type="radio" id="list-option-11" class="mdl-radio__button"
+                               name="mob_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-11">
+                        <input type="radio" id="list-switch-11" class="mdl-radio__button"
+                               name="mob_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End Mobility -->
+
+        <!-- Attention -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                Attention
+                <i class="material-icons  mdl-list__item-avatar show-modal-attention"
+                   style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-12">
+                          <input type="radio" id="list-checkbox-12" class="mdl-radio__button"
+                                 name="att_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-12">
+                        <input type="radio" id="list-option-12" class="mdl-radio__button"
+                               name="att_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-12">
+                        <input type="radio" id="list-switch-12" class="mdl-radio__button"
+                               name="att_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End Attention -->
+
+        <!-- Calmness -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                Calmness
+                <i class="material-icons  mdl-list__item-avatar show-modal-calmness"
+                   style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-13">
+                          <input type="radio" id="list-checkbox-13" class="mdl-radio__button"
+                                 name="calm_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-13">
+                        <input type="radio" id="list-option-13" class="mdl-radio__button"
+                               name="calm_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-13">
+                        <input type="radio" id="list-switch-13" class="mdl-radio__button"
+                               name="calm_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End Calmness -->
+
+        <!-- Transparency. -->
+        <form action="javascript:sendData();"
+              class="form-data-send" method="post">
+            <h4 class="w3-jumbo">
+                Transparency
+                <i class="material-icons  mdl-list__item-avatar show-modal-transparency"
+                   style="cursor: pointer">info</i>
+            </h4>
+            <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-checkbox-14">
+                          <input type="radio" id="list-checkbox-14" class="mdl-radio__button"
+                                 name="transp_options" value="0"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Not relvant
+                    </span>
+                </li>
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-option-14">
+                        <input type="radio" id="list-option-14" class="mdl-radio__button"
+                               name="transp_options" value="1"/>
+                      </label>
+                    </span>
+
+                    <span class="mdl-list__item-primary-content">
+                      Little relevant
+                    </span>
+
+                </li>
+
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-secondary-action">
+                      <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                             for="list-switch-14">
+                        <input type="radio" id="list-switch-14" class="mdl-radio__button"
+                               name="transp_options" value="2"/>
+                      </label>
+                    </span>
+                    <span class="mdl-list__item-primary-content">
+                      Very relavant
+                    </span>
+                </li>
+
+            </ul>
+            <hr/>
+        </form>
+
+        <!-- End Calmness -->
+    </div>
+    <div style="margin-top: 10px">
+        <button class="mdl-button mdl-js-button
+        mdl-button--raised mdl-js-ripple-effect
+         mdl-button--accent btn-new"
+                id="btn_send"
+                style="float: right">
+            Submit
+        </button>
+    </div>
+
+    <div class="mdl-spinner mdl-js-spinner is-active load-tag" style="float: right"></div>
+
+    <!-- End page content -->
+</div>
+
+<!--Modal Funcional Suitability-->
+<dialog class="mdl-dialog modal-dialog-functional modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Functional Suitability</h1>
+        <p>
+            The degree to which the software product provides functions that meet stated and
+            implied needs when the software is used under specified conditions [ISO/IEC 25010, 2011].
+        </p>
+        <p>
+            Functional suitability measures should be able to measure the degree to which a product or system
+            provides functions that meet stated and implied needs when used under specified conditions [ISO/IEC 25023,
+            2011].
+        </p>
+
+        <ul class="demo-list-three mdl-list">
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Appropriateness</span>
+                  <span class="mdl-list__item-text-body">
+                            The degree to which the software product provides an appropriate set of functions for
+                          specified tasks and user objectives. Functional appropriateness measures should be able to measure the degree to
+                          which the functions facilitate the accomplishment of specified tasks and objectives.
+                  </span>
+                </span>
+            </li>
+        </ul>
+
+    </div>
+
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+
+</dialog>
+<!--End Modal Funcional Suitability-->
+
+<!--Modal Reliability-->
+<dialog class="mdl-dialog modal-dialog-reliability modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Reliability</h1>
+        <p>
+            The degree to which the software product can maintain a specified level of
+            performance when used under specified conditions [ISO/IEC 25010, 2011].
+        </p>
+        <p>
+            Reliability measures should be able to measure the degree to which a system, product or component
+            performs specified functions under specified conditions for a specified period of time [ISO/IEC 25023,
+            2011].
+        </p>
+
+        <ul class="demo-list-three mdl-list list-new">
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Availability</span>
+                  <span class="mdl-list__item-text-body">
+                    The degree to which a software component is operational and available when
+                    required for use. Availability measures should be able to measure the degree to a system,
+                      product or component isoperational and accessible when required for use.
+                  </span>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Fault tolerance</span>
+                  <span class="mdl-list__item-text-body">
+                    The degree to which the software product can maintain a specified level of performance
+                      in cases of software faults or of infringement of its specified interface. Fault tolerance
+                      measures should be able to measure the degree to which a system, product or
+                      component operates as intended despite the presence of hardware or software faults.
+                  </span>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Recoverability</span>
+                  <span class="mdl-list__item-text-body teste-leo">
+                      The degree to which the software product can re-establish a specified level of performance
+                      and recover the data directly affected in the case of a failure. Fault tolerance measures
+                      should be able to measure the degree to which, in the event of an interruption or a failure,
+                      a product or system can recover the data directly affected and re-establish the desired state
+                      of the system.
+                  </span>
+                </span>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+
+</dialog>
+<!--End Modal Reliability-->
+
+<!--Modal Performance efficiency-->
+<dialog class="mdl-dialog modal-dialog-efficiency modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Performance efficiency</h1>
+        <p>
+            The degree to which the software product provides appropriate performance, relative
+            to the amount of resources used, under stated conditions [ISO/IEC 25010, 2011].
+        </p>
+        <p>
+            Performance efficiency measures should be able to measure the performance relative to the amount
+            of resources used under stated conditions. Resources can include other software products, the
+            software and hardware configuration of the system, and materials (e.g. print paper, storage media) [ISO/IEC
+            25023, 2011].
+        </p>
+
+        <ul class="demo-list-three mdl-list list-new">
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Resource utilisation</span>
+                  <span class="mdl-list__item-text-body">
+                        The degree to which the software product provides appropriate response and
+                        processing times and throughput rates when performing its function, under stated
+                        conditions. Resource utilisation measures should be able to measure the degree
+                      to which the amounts and types of resources used by a product or system when performing its functions meet requirements.
+                  </span>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Time behaviour</span>
+                  <span class="mdl-list__item-text-body">
+                        The degree to which the software product uses appropriate amounts and types of
+                        resources when the software performs its function under stated conditions. Time
+                      behaviour measures should be able to measure the degree to which the response and
+                      processing times and throughput rates of a product or system when performing its functions meet requirements.
+                  </span>
+                </span>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+
+</dialog>
+<!--End Modal Performance efficiency-->
+
+<!--Modal Operability -->
+<dialog class="mdl-dialog modal-dialog-operability  modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Operability</h1>
+        <p>
+            The degree to which the software product can be understood, learned, used and
+            attractive to the user, when used under specified conditions [ISO/IEC 25010, 2011].
+        </p>
+        <p>
+            Operability measures should be able to measure the degree to which a product or system has
+            attributes that make it easy to operate and control [ISO/IEC 25023, 2011].
+        </p>
+
+        <ul class="demo-list-three mdl-list list-new">
+
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Appropriateness recognisability</span>
+                  <span class="mdl-list__item-text-body">
+                        The degree to which the software product enables users to recognise whether the
+                        software is appropriate for their needs. Users should be able to select a
+                      system/software product which is suitable for their intended use. The measures
+                      for appropriateness recognisability should be able to measure the degree to
+                      which users can recognise whether a product or system is appropriate for their needs.
+                  </span>
+                </span>
+            </li>
+
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Attractiveness</span>
+                  <span class="mdl-list__item-text-body">
+                      The degree to which the software product is attractive to the user.
+                  </span>
+                </span>
+            </li>
+
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Ease of use</span>
+                  <span class="mdl-list__item-text-body">
+                        The degree to which the software product makes it easy for users to operate and
+                        control it.
+                  </span>
+                </span>
+            </li>
+
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Learnability</span>
+                  <span class="mdl-list__item-text-body">
+                        The degree to which the software product enables users to learn its application.
+                      Learnability measures should be able to measure the degree to which a product or system can be
+                        used by specified users to achieve specified goals of learning to use the product
+                      or system with effectiveness, efficiency, freedom from risk and satisfaction
+                      in a specified context of use.
+                  </span>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Technical accessibility</span>
+                  <span class="mdl-list__item-text-body">
+                    The degree of operability of the software product for users with specified disabilities.
+                  </span>
+                </span>
+            </li>
+        </ul>
+
+    </div>
+
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+
+</dialog>
+<!--End Model Operability -->
+
+<!--Modal Compatibility -->
+<dialog class="mdl-dialog modal-dialog-compatibility  modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Compatibility</h1>
+        <p>
+            The ability of two or more software components to exchange information and/or to
+            perform their required functions while sharing the same hardware or software
+            environment [ISO/IEC 25010, 2011].
+        </p>
+
+        <p>
+            Compatability measures should be able to measure the degree to which a product, system or
+            component can exchange information with other products, systems or components, and/or perform its
+            required functions, while sharing the same hardware or software environment [ISO/IEC 25023, 2011].
+        </p>
+        <ul class="demo-list-three mdl-list list-new list-new-few">
+
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Co-existence</span>
+                  <span class="mdl-list__item-text-body">
+                      The degree to which the software product can co-exist with other independent
+                      software in a common environment sharing common resources without any
+                      detrimental impacts. Co-existence measures should be able to measure the degree
+                      to which a product can perform its required functions efficiently while sharing
+                      a common environment and resources with other products, without detrimental impact
+                      on any other product.
+                        </span>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line spn-s">
+                <span class="mdl-list__item-primary-content">
+                  <span>Interoperability</span>
+                  <span class="mdl-list__item-text-body">
+                      The degree to which the software product can be cooperatively operable with one
+                      or more other software products. Interoperability measures should be able to measure the degree
+                      to which two or more systems, products or components can exchange information and use the
+                      information that has been exchanged. Interoperability measures should be able to measure the
+                      degree to which two or more systems, products or components can exchange information and use
+                      the information that has been exchanged.
+                        </span>
+                </span>
+            </li>
+
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Replaceability</span>
+                  <span class="mdl-list__item-text-body">
+                    The degree to which the software product can be used in place of another specified
+                    software product for the same purpose in the same environment. Replaceability measures should be
+                      able to measure the degree to which a product can be replaced by another specified software
+                      product for the same purpose in the same environment.
+                  </span>
+                </span>
+            </li>
+        </ul>
+
+    </div>
+
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+
+</dialog>
+<!--End Compatibility -->
+
+<!--Modal Security -->
+<dialog class="mdl-dialog modal-dialog-security  modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Security</h1>
+        <p>
+            The protection of system items from accidental or malicious access, use,
+            modification, destruction, or disclosure [ISO/IEC 25010, 2011].
+        </p>
+        <p>
+            Security measures should be able to measure the degree to which a product or system protects
+            information and data so that persons or other products or systems have the degree of data access
+            appropriate to their types and levels of authorisation [ISO/IEC 25023, 2011].
+        </p>
+
+        <ul class="demo-list-three mdl-list list-new">
+
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Confidentiality</span>
+                  <span class="mdl-list__item-text-body">
+                    The degree to which the software product provides protection from unauthorized
+                      disclosure of data or information, whether accidental or deliberate.
+                      Confidentiality measures should be able to measure the degree to which a product
+                      or system ensures that data are accessible only to those authorized to have access.
+                  </span>
+                </span>
+            </li>
+
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Integrity</span>
+                  <span class="mdl-list__item-text-body">
+                        The degree to which the accuracy and completeness of assets are safeguarded.
+                      Integrity measures should be able to measure the degree to which a system,
+                      product or component prevents unauthorized access to, or modification of,
+                      computer programs or data.
+                  </span>
+                </span>
+            </li>
+        </ul>
+        <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Non-repudiation</span>
+                  <span class="mdl-list__item-text-body">
+                      The degree to which actions or events can be proven to have taken place, so that the events
+                      or actions cannot be repudiated later. Non-repudiation measures should be able to measure
+                      the degree to which actions or events can be proven to have taken place, so that the events
+                      or actions cannot be repudiated later.
+                        </span>
+                </span>
+        </li>
+
+        <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Accountability</span>
+                  <span class="mdl-list__item-text-body">
+                    The degree to which the actions of an entity can be traced uniquely to the entity.
+                      Accountability measures should be able to measure the degree to which the actions
+                      of an entity can be traced uniquely to the entity.
+                  </span>
+                </span>
+        </li>
+
+        <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Authenticity</span>
+                  <span class="mdl-list__item-text-body">
+                    The degree to which the identity of a subject or resource can be proved to be the
+                      one claimed. Authenticity measures should be able to measure the degree to which
+                      the identity of a subject or resource can be proved to be the one claimed.
+                  </span>
+                </span>
+        </li>
+
+        </ul>
+
+    </div>
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+</dialog>
+<!--End Model Security -->
+
+<!--Modal Maintainability -->
+<dialog class="mdl-dialog modal-dialog-maintainability  modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Maintainability</h1>
+        <p>
+            The degree to which the software product can be modified. Modifications may
+            include corrections, improvements or adaptation of the software to changes in
+            environment, and in requirements and functional specifications [ISO/IEC 25010, 2011].
+        </p>
+        <p>
+            Maintainability measures should be able to measure the degree of effectiveness and efficiency with
+            which a product or system can be modified by the intended maintainers [ISO/IEC 25023, 2011].
+        </p>
+
+        <ul class="demo-list-three mdl-list list-new">
+
+            <li class="mdl-list__item mdl-list__item--three-line spn-se">
+                <span class="mdl-list__item-primary-content">
+                  <span>Analysability</span>
+                  <span class="mdl-list__item-text-body">
+                    The degree to which the software product can be diagnosed for deficiencies or
+                      causes of failures in the software, or for the parts to be modified
+                      to be identified. Analysability measures should be able to measure the degree of effectiveness
+                      and efficiency with which it is possible to assess the impact on a product or system of an
+                      intended change to one or more its parts, or to diagnose a product for deficiencies or causes
+                      of failures, or to identify parts to be modified.
+                  </span>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Testability</span>
+                  <span class="mdl-list__item-text-body">
+                        The degree to which the software product enables modified software to be validated. Testability
+                      measures should be able to measure the degree of effectiveness and efficiency with which test criteria
+                      can be established for a system, product or component and tests can be performed to determine
+                      whether those criteria have been met.
+                  </span>
+                </span>
+            </li>
+
+        </ul>
+
+    </div>
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+</dialog>
+<!--End Maintainability -->
+
+<!--Modal Transferability -->
+<dialog class="mdl-dialog modal-dialog-transferability  modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Transferability</h1>
+        <p>
+            The degree to which the software product can be transferred from one environment
+            to another [ISO/IEC 25010, 2011].
+        </p>
+
+        <ul class="demo-list-three mdl-list list-new">
+
+            <li class="mdl-list__item mdl-list__item--three-line spn-s">
+                <span class="mdl-list__item-primary-content">
+                  <span>Adaptability</span>
+                  <span class="mdl-list__item-text-body">
+                        The degree to which the software product can be adapted for different specified
+                        environments without applying actions or means other than those provided for this
+                        purpose for the software considered. Adaptability measures should be able to measure
+                      the degree to which a product or system can effectively and efficiently be adapted for
+                      different or evolving hardware, software or other operational or usage environments.
+                  </span>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span>Installability</span>
+                  <span class="mdl-list__item-text-body">
+                    The degree to which the software product can be successfully installed and
+                    uninstalled in a specified environment. Installability measures should be able
+                      to measure the degree of effectiveness and efficiency with which a product or
+                      system can be successfully installed and/or uninstalled in a specified environment.
+                  </span>
+                </span>
+            </li>
+
+        </ul>
+
+    </div>
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+</dialog>
+<!--End Transferability -->
+
+<!--Modal EPIC -->
+<dialog class="mdl-dialog modal-dialog-epic  modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>EPIC</h1>
+        <p>
+            [].
+        </p>
+
+        <ul class="demo-list-three mdl-list list-new">
+
+            <li class="mdl-list__item mdl-list__item--three-line spn-s">
+                <span class="mdl-list__item-primary-content">
+                  <span></span>
+                  <span class="mdl-list__item-text-body">
+
+                  </span>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line spn-pd">
+                <span class="mdl-list__item-primary-content">
+                  <span></span>
+                  <span class="mdl-list__item-text-body">
+
+                  </span>
+                </span>
+            </li>
+
+        </ul>
+
+    </div>
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+</dialog>
+<!--End EPIC -->
+
+<!--Modal Context-awareness -->
+<dialog class="mdl-dialog modal-dialog-context  modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Context-awareness</h1>
+        <p>
+            [].
+        </p>
+
+    </div>
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+</dialog>
+<!--End Context-awareness -->
+
+<!--Modal Mobility -->
+<dialog class="mdl-dialog modal-dialog-mobility  modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Mobility</h1>
+        <p>
+            [].
+        </p>
+
+    </div>
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+</dialog>
+<!--End Mobility -->
+
+<!--Modal Attention -->
+<dialog class="mdl-dialog modal-dialog-attention  modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Attention</h1>
+        <p>
+            [].
+        </p>
+
+    </div>
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+</dialog>
+<!--End Attention -->
+
+<!--Modal Calmness -->
+<dialog class="mdl-dialog modal-dialog-calmness  modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Calmness</h1>
+        <p>
+            [].
+        </p>
+
+    </div>
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+</dialog>
+<!--End Calmness -->
+
+<!--Modal Transparency -->
+<dialog class="mdl-dialog modal-dialog-transparency  modal-dialog-new">
+    <div class="mdl-dialog__content">
+        <h1>Transparency</h1>
+        <p>
+            [].
+        </p>
+
+    </div>
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close"
+            style="float: right !important;">
+        Close
+    </button>
+</dialog>
+<!--End Transparency -->
+
+<!--Success -->
+<dialog class="mdl-dialog modal-dialog-success  modal-dialog-custom">
+    <div class="mdl-dialog__content div-custom">
+        <h1 id="h_title">Thanks.</h1>
+        <p id="texto_modal">
+            <i class="material-icons  mdl-list__item-avatar show-modal-success"
+               style="cursor: pointer">info</i>
+            Your answer was sbmitted successfully!
+        </p>
+
+    </div>
+    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close-button"
+            style="float: right !important;">
+        Close
+    </button>
+</dialog>
+<!--End Success -->
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32"
+     style="margin-top:75px;padding-right:58px">
+    <p class="w3-right">
+        Powered by <a href="http://www.lsdi.ufma.br/" title="W3.CSS" target="_blank"
+                      class="w3-hover-opacity">LSDi - UFMA</a>
+    </p>
+</div>
+
+</body>
+</html>
