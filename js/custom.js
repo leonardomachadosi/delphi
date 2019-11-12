@@ -22,6 +22,8 @@ $(document).ready(function () {
     var user = buscarPerfil();
     if (!user) {
         goToIndex();
+    } else {
+        $('#expert_id').attr('value', user['uf04_cod_expert']);
     }
     var btn_close = $('.close-button');
     var load = $('.load-tag');
@@ -38,36 +40,39 @@ $(document).ready(function () {
 
     function sendData() {
         var data = $('.form-data-send').serialize();
-        if (data) {
-            $.ajax({
-                method: "POST",
-                url: "php/validated-form.php",
-                data: data,
-                beforeSend: function (xhr) {
-                    load.show();
-                    btn.hide();
+        // if (data) {
+        $.ajax({
+            method: "POST",
+            url: "php/validated-form.php",
+            data: data,
+            beforeSend: function (xhr) {
+                load.show();
+                btn.hide();
+            }
+        })
+            .done(function (msg) {
+                btn.show();
+                load.hide();
+                if (msg == 0) {
+                    textModal("Pay Attention", "There are empty fields.");
+                } else if (msg == 1) {
+                    textModal("Thanks.", "Your answer was sent successfully.");
+                    success = true;
+                } else {
+                    console.log(msg);
+                    textModal("Pay Attention", 'Your answer was not sent.');
                 }
             })
-                .done(function (msg) {
-                    btn.show();
-                    load.hide();
-                    if (msg == 0) {
-                        textModal("Pay Attention", "There are empty fields.");
-                    } else if (msg == 1) {
-                        textModal("Tranks.", "Your answer was sent successfully.");
-                        success = true;
-                    } else {
-                        textModal("Pay Attention", 'Your answer was not sent.');
-                    }
-                })
-                .fail(function (jqXHR, textStatus) {
-                    textModal("Pay Attention", 'Your answer was not sent.');
-                    btn.show();
-                    load.hide();
-                });
-        } else {
-            textModal("Pay Attention", 'Your answer are empty');
-        }
+            .fail(function (jqXHR, textStatus) {
+                textModal("Pay Attention", 'Your answer was not sent.');
+                btn.show();
+                load.hide();
+            });
+        // }
+
+        // else {
+        //     textModal("Pay Attention", 'Your answer are empty');
+        // }
     }
 
 
@@ -80,6 +85,8 @@ $(document).ready(function () {
     });
 
     function goToIndex() {
+        localStorage.clear();
         window.location.replace("./index.html");
     }
-});
+})
+;

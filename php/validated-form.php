@@ -17,6 +17,8 @@ $att_options = $_POST['att_options'];
 $calm_options = $_POST['calm_options'];
 $transp_options = $_POST['transp_options'];
 
+$expert_id = $_POST['expertId'];
+
 if ($fs_options == null) {
     echo 0;
     return;
@@ -187,13 +189,11 @@ if ($transp_options == null) {
     }
 }
 
-$expert_id = 1;
-
 //
 
 //1,Functional Suitability
 
-$q = "INSERT INTO UF09_ANSWER(FKUF09UF04_COD_EXPERT, 
+$q = "INSERT INTO UF09_ANSWER(FKUF09UF04_COD_EXPERT,
                         FKUF09UF01_COD_CHARACTERISTIC,
                         FKUF09UF03_COD_QUALIFIER,
                         UF09_DATE) VALUES (" . $expert_id . ",1, " . $fs_options . " , current_timestamp)";
